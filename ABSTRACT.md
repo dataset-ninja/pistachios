@@ -26,5 +26,28 @@ The authors' research marks the pioneering exploration into detecting, tracking,
 In the authors' research, one of the most relevant studies is fruit detection and counting, which employs various tools including black and white (B/W) cameras, color cameras, thermal cameras, and spectral cameras. However, the nature of the data dictates that color becomes a crucial feature, rendering B/W cameras unsuitable for the task. Similarly, the spectral camera's time delay makes it impractical for this application. Despite its sensitivity to size, the thermal camera is not suitable for analyzing the data due to its inability to detect split pistachios. Consequently, the color camera emerges as the most suitable tool for the job. Additionally, color cameras offer the advantage of widespread availability, particularly in mobile phones, which can facilitate remote monitoring and control. While alternative methods such as sensors exist for counting, they are not suitable for this specific task due to the challenge of accurately counting split and non-split pistachios.
 
 
-In Iran, pistachios are commonly referred to as Pesteh hence why the authors named their dataset Pesteh-Set. This dataset comprises two main components. The first part consists of 423 images, each meticulously labeled with ground truth data. The pistachios in these images are categorized into two classes: "Open-mouth" and "closed-mouth," with bounding boxes provided for each class. The number of pistachios per image varies from 1 to 27, totaling 3927 pistachios across all images. The second part of the dataset comprises six videos, totaling 9486 frames, which were utilized for the counting phase. These videos feature 561 pistachios in motion and over 350,000 individual pistachios collectively across all frames. Recorded using a cell-phone camera with a resolution of 1920 × 1080 pixels, the dataset's videos are captured at varying frame rates. Five of the videos are recorded at a frame rate of 60 frames per second (fps), while the remaining video is recorded at 30 fps. The cell-phone camera was positioned on a wall above the transportation line for the pistachios. This line was designed to allow the pistachios to roll, a crucial feature as it enables open-mouth pistachios to reveal their open side as they roll, which may not be visible otherwise.
+In Iran, pistachios are commonly referred to as Pesteh hence why the authors named their dataset Pesteh-Set. This dataset comprises two main components. The first part consists of 423 images, each meticulously labeled with ground truth data. The pistachios in these images are categorized into two classes: "Open-mouth" and "closed-mouth," with bounding boxes provided for each class. The number of pistachios per image varies from 1 to 27, totaling 3927 pistachios across all images. The second part of the dataset comprises six videos, totaling 9486 frames, which were utilized for the counting phase. These videos feature 561 pistachios in motion and over 350,000 individual pistachios collectively across all frames. Recorded using a cell phone camera with a resolution of 1920 × 1080 pixels, the dataset's videos are captured at varying frame rates. Five of the videos are recorded at a frame rate of 60 frames per second (fps), while the remaining video is recorded at 30 fps. The cell phone camera was positioned on a wall above the transportation line for the pistachios. This line was designed to allow the pistachios to roll, a crucial feature as it enables open-mouth pistachios to reveal their open side as they roll, which may not be visible otherwise.
+
+<img src="https://github.com/dataset-ninja/pistachios/assets/120389559/3da5663e-db65-43ad-bcfe-aa43335e6492" alt="image" width="800">
+
+<span style="font-size: smaller; font-style: italic;">The General View of how Pesteh-Set was recoreded and the proposed system for counting the pistachios.</span>
+
+The authors utilized a self-developed program, leveraging the OpenCV library in Python, to label selected frames from the videos. In this labeling process, the pistachios were categorized into two classes: open-mouth and closed-mouth pistachios. Furthermore, the authors generously shared the self-developed labeling program along with all associated data, facilitating its use by other researchers to expand the Pistachio Dataset.
+
+<img src="https://github.com/dataset-ninja/pistachios/assets/120389559/dc454742-b40b-40ab-a131-600a5098a937" alt="image" width="800">
+
+<span style="font-size: smaller; font-style: italic;">Some of the images in the Pesteh Set.</span>
+
+|           | Number of Open-mouth Pistachios | Number of Closed-mouth Pistachios | Number of All the Pistachios |
+|-----------|---------------------------------|------------------------------------|------------------------------|
+| Video 1   | 50                              | 20                                 | 70                           |
+| Video 2   | 60                              | 20                                 | 80                           |
+| Video 3   | 70                              | 20                                 | 90                           |
+| Video 4   | 90                              | 20                                 | 110                          |
+| Video 5   | 100                             | 20                                 | 120                          |
+| Video 6   | 39                              | 52                                 | 91                           |
+| All Videos| 409                             | 152                                | 561                          |
+| All Images| 1993                            | 1934                               | 3927                         |
+
+<span style="font-size: smaller; font-style: italic;">This table shows the distribution of Pistachios in the Pesteh Set.</span>
 
