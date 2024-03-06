@@ -1,11 +1,13 @@
 If you make use of the Pistachios data, please cite the following reference:
 
 ``` bibtex 
-@dataset{Pistachios,
-  author={Mohammad Rahimzadeh and Abolfazl Attar},
-  title={Pistachios Dataset},
+@article{rahimzadeh2021detecting,
+  title={Detecting and counting pistachios based on deep learning},
+  author={Rahimzadeh, Mohammad and Attar, Abolfazl},
+  journal={Iran Journal of Computer Science},
+  pages={1--13},
   year={2021},
-  url={https://github.com/mr7495/Pesteh-Set}
+  publisher={Springer}
 }
 ```
 
