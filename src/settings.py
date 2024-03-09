@@ -15,7 +15,7 @@ from dataset_tools.templates import (
 ##################################
 PROJECT_NAME: str = "Pesteh"
 PROJECT_NAME_FULL: str = "Pesteh Dataset"
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
@@ -24,9 +24,9 @@ LICENSE: License = License.CC_BY_4_0(
     source_url="https://www.kaggle.com/datasets/mohammadrahimzadeh/pistachios"
 )
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Agricultural()]
-CATEGORY: Category = Category.Agriculture()
+CATEGORY: Category = Category.Food()
 
-CV_TASKS: List[CVTask] = [CVTask.ObjectDetection(), CVTask.Classification()]
+CV_TASKS: List[CVTask] = [CVTask.ObjectDetection(), CVTask.Counting()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
 
 RELEASE_DATE: Optional[str] = "2021-05-03"  # e.g. "YYYY-MM-DD"
