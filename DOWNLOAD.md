@@ -1,6 +1,6 @@
 Dataset **Pesteh** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/2/K/9c/KubjU0nmLTtNn2SKu2P5TxqG4TWifik9fOjADASDNd323wtu9toUYrakmRhQ1hGuBX7VX7mRv9RViiFLwLT5ddibHIta7bVG63PpEnt0fyuLKNidp4g6kLX46xNV.tar)
+ [Download](https://www.dropbox.com/scl/fi/kvol6yte98kdcypt6gme1/pesteh-DatasetNinja.tar?rlkey=5e8wksd4pg5syomfxam356tm0&dl=1)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
